@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/select_normal"
+        android:title="@string/normal"
+        android:orderInCategory="1"
+        />
+
+    <item android:id="@+id/select_italic"
+        android:title="@string/italic"
+        android:orderInCategory="2"
+        />
+    <item android:id="@+id/select_bold"
+        android:title="@string/bold"
+        android:orderInCategory="3"
+        />
+
+</menu>

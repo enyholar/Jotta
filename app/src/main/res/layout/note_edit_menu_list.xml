@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+  <RelativeLayout
+    android:id="@+id/add_check_box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/common_selector">
+
+    <android.support.v7.widget.AppCompatImageView
+      android:id="@+id/im_ava"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:paddingLeft="16dp"
+      android:src="@drawable/ic_list_black_24dp"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_centerVertical="true"
+      android:paddingLeft="72dp"
+      android:orientation="vertical"
+      tools:ignore="RtlHardcoded">
+
+      <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_box"/>
+
+    </LinearLayout>
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:id="@+id/add_reminder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/common_selector">
+
+    <android.support.v7.widget.AppCompatImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:paddingLeft="16dp"
+      android:src="@drawable/ic_access_time_black_24dp"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_centerVertical="true"
+      android:paddingLeft="72dp"
+      android:orientation="vertical"
+      tools:ignore="RtlHardcoded">
+
+      <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm"/>
+    </LinearLayout>
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:id="@+id/share_note"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/common_selector">
+
+    <android.support.v7.widget.AppCompatImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:paddingLeft="16dp"
+      android:src="@drawable/ic_share_black_24dp"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_centerVertical="true"
+      android:paddingLeft="72dp"
+      android:orientation="vertical"
+      tools:ignore="RtlHardcoded">
+
+      <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_note"/>
+    </LinearLayout>
+
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:id="@+id/sketch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:visibility="gone"
+    android:background="@drawable/common_selector">
+
+    <android.support.v7.widget.AppCompatImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:paddingLeft="16dp"
+      android:src="@drawable/ic_share_black_24dp"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_centerVertical="true"
+      android:paddingLeft="72dp"
+
+      android:orientation="vertical"
+      tools:ignore="RtlHardcoded">
+
+      <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sketch"/>
+    </LinearLayout>
+  </RelativeLayout>
+
+  <HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone">
+    <LinearLayout
+      android:id="@+id/thme1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="10dp"
+      android:paddingLeft="@dimen/list_item_image_padding"
+      android:paddingRight="@dimen/list_item_image_padding"
+      android:orientation="horizontal">
+
+      <com.gideondev.jotta.utils.view.CircleCardView
+        android:id="@+id/theme_default"
+        android:layout_width="@dimen/color_dim"
+        android:layout_height="@dimen/color_dim">
+
+        <android.support.v7.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="fitXY"
+          android:src="@drawable/circle_shape"
+          android:tint="@color/white"/>
+
+        <android.support.v7.widget.AppCompatImageView
+          android:id="@+id/img_default"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_done_black_24dp"
+          android:visibility="gone"/>
+      </com.gideondev.jotta.utils.view.CircleCardView>
+
+      <com.gideondev.jotta.utils.view.CircleCardView
+        android:id="@+id/light_pink"
+
+        android:layout_width="@dimen/color_dim"
+        android:layout_height="@dimen/color_dim"
+        android:layout_marginLeft="20dp">
+
+        <android.support.v7.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="fitXY"
+          android:src="@drawable/circle_shape"
+          android:tint="@color/light_pink"/>
+
+        <android.support.v7.widget.AppCompatImageView
+          android:id="@+id/img_light_pink"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_done_black_24dp"
+          android:visibility="gone"/>
+      </com.gideondev.jotta.utils.view.CircleCardView>
+
+      <com.gideondev.jotta.utils.view.CircleCardView
+        android:id="@+id/light_purple"
+
+        android:layout_width="@dimen/color_dim"
+        android:layout_height="@dimen/color_dim"
+        android:layout_marginLeft="20dp"
+
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="fitXY"
+          android:src="@drawable/circle_shape"
+          android:tint="@color/light_purple"/>
+
+        <android.support.v7.widget.AppCompatImageView
+          android:id="@+id/img_light_purple"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_done_black_24dp"
+          android:visibility="gone"/>
+      </com.gideondev.jotta.utils.view.CircleCardView>
+
+      <com.gideondev.jotta.utils.view.CircleCardView
+        android:id="@+id/light_blue"
+        android:layout_width="@dimen/color_dim"
+        android:layout_height="@dimen/color_dim"
+        android:layout_marginLeft="20dp"
+        >
+        <android.support.v7.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="fitXY"
+          android:src="@drawable/circle_shape"
+          android:tint="@color/light_blue"/>
+
+        <android.support.v7.widget.AppCompatImageView
+          android:id="@+id/img_light_blue"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_done_black_24dp"
+          android:visibility="gone"/>
+      </com.gideondev.jotta.utils.view.CircleCardView>
+      <com.gideondev.jotta.utils.view.CircleCardView
+        android:id="@+id/light_green"
+        android:layout_width="@dimen/color_dim"
+        android:layout_height="@dimen/color_dim"
+        android:layout_marginLeft="20dp"
+        >
+        <android.support.v7.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="fitXY"
+          android:src="@drawable/circle_shape"
+          android:tint="@color/light_green"/>
+
+        <android.support.v7.widget.AppCompatImageView
+          android:id="@+id/img_light_green"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_done_black_24dp"
+          android:visibility="gone"/>
+      </com.gideondev.jotta.utils.view.CircleCardView>
+      <com.gideondev.jotta.utils.view.CircleCardView
+        android:id="@+id/light_lime"
+        android:layout_width="@dimen/color_dim"
+        android:layout_height="@dimen/color_dim"
+        android:layout_marginLeft="20dp"
+        >
+        <android.support.v7.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="fitXY"
+          android:src="@drawable/circle_shape"
+          android:tint="@color/light_lime"/>
+
+        <android.support.v7.widget.AppCompatImageView
+          android:id="@+id/img_light_lime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_done_black_24dp"
+          android:visibility="gone"/>
+      </com.gideondev.jotta.utils.view.CircleCardView>
+      <com.gideondev.jotta.utils.view.CircleCardView
+        android:id="@+id/theme_light_amber"
+        android:layout_width="@dimen/color_dim"
+        android:layout_height="@dimen/color_dim"
+        android:layout_marginLeft="20dp"
+        >
+        <android.support.v7.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="fitXY"
+          android:src="@drawable/circle_shape"
+          android:tint="@color/light_amber"/>
+
+        <android.support.v7.widget.AppCompatImageView
+          android:id="@+id/img_light_amber"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_done_black_24dp"
+          android:visibility="gone"/>
+      </com.gideondev.jotta.utils.view.CircleCardView>
+      <com.gideondev.jotta.utils.view.CircleCardView
+        android:id="@+id/light_orange"
+        android:layout_width="@dimen/color_dim"
+        android:layout_height="@dimen/color_dim"
+        android:layout_marginLeft="20dp"
+        >
+        <android.support.v7.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="fitXY"
+          android:src="@drawable/circle_shape"
+          android:tint="@color/light_orange"/>
+
+        <android.support.v7.widget.AppCompatImageView
+          android:id="@+id/img_light_orange"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:src="@drawable/ic_done_black_24dp"
+          android:visibility="gone"/>
+      </com.gideondev.jotta.utils.view.CircleCardView>
+
+    </LinearLayout>
+
+  </HorizontalScrollView>
+
+</LinearLayout>

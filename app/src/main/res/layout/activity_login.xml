@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:night="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/ic_login_back"
+    tools:context=".Feature.Login.LoginActivity">
+    <android.support.design.widget.AppBarLayout
+      android:id="@+id/app_bar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/transparent"
+      android:theme="@style/AppTheme.AppBarOverlay"
+      android:visibility="gone">
+
+      <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+      </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="@dimen/default_padding"
+      android:paddingRight="@dimen/default_padding">
+      <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+          <ImageView
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_header"/>
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:text="@string/email"/>
+
+
+          <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/light_gray_new"
+            android:textColorHint="@color/white"/>
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:text="@string/password"/>
+
+          <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@color/light_gray_new"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/light_gray_new"
+            android:inputType="textPassword"/>
+
+          <android.support.v7.widget.AppCompatButton
+            android:id="@+id/frget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            android:background="@color/transparent"
+            android:text="@string/forget_password"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+          <android.support.v7.widget.AppCompatButton
+            android:id="@+id/user_login"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@color/btn_login_color"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+          <RelativeLayout
+            android:id="@+id/btn_facebook"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/light_blue"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:orientation="horizontal"
+              android:layout_centerInParent="true"
+              android:layout_height="wrap_content">
+              <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+               />
+
+              <!--android:src="@drawable/com_facebook_button_icon"-->
+
+              <TextView
+                android:id="@+id/fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="Log In With FaceBook"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            </LinearLayout>
+
+
+          </RelativeLayout>
+
+          <android.support.v7.widget.AppCompatButton
+            android:id="@+id/ln_signUp_email"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:text="@string/create_account"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+          <android.support.v7.widget.AppCompatButton
+           android:id="@+id/back_skip"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="@string/skip"
+            android:textAllCaps="true"
+            android:background="@color/transparent"
+            android:textColor="@color/yellowprimary"
+            android:textSize="16sp"/>
+
+        </LinearLayout>
+      </ScrollView>
+
+
+      <LinearLayout
+        android:id="@+id/skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="end"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:tint="@color/white"
+          />
+        <com.gideondev.jotta.utils.view.RobotoMediumTextView
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="5dp"
+          android:textColor="@color/white"/>
+
+      </LinearLayout>
+    </RelativeLayout>
+
+
+  </LinearLayout>
+</layout>
+
+
+

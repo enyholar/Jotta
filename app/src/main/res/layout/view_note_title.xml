@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+  android:id="@+id/detail_tile_card"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginBottom="6dp"
+  android:paddingBottom="2dp"
+  android:background="@drawable/bg_card">
+
+  <LinearLayout
+    android:id="@+id/title_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+      android:id="@+id/tag_marker"
+      android:layout_width="7dp"
+      android:layout_height="match_parent"
+      android:background="@null"/>
+
+    <com.neopixl.pixlui.components.edittext.EditText
+      android:id="@+id/note_edit_title"
+      paddingEnd="16dp"
+      paddingStart="6dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingTop="6dp"
+      android:paddingBottom="6dp"
+      android:paddingLeft="6dp"
+      android:paddingRight="16dp"
+      android:background="@null"
+      android:hint="@string/title"
+      android:inputType="textCapSentences"
+      android:linksClickable="false"
+      android:textAppearance="@style/Text.Big"
+      android:textColor="@color/text_color"
+      android:textColorHint="@color/text_color_lighter"
+      android:textCursorDrawable="@null"
+      pixlui:typeface="fonts/RobotoSlab-Bold.ttf"/>
+  </LinearLayout>
+</LinearLayout>

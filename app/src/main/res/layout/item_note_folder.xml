@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="folderModel"
+            type="com.gideondev.jotta.model.FolderModel" />
+
+        <variable
+            name="adap"
+            type="com.gideondev.jotta.feature.main.adapter.FolderAdapter" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/common_selector"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:tint="@color/black"
+            android:src="@drawable/ic_folder_grey_400_24dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_folder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="@{folderModel.tableName}"
+            android:textColor="@color/list_color"
+       />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:text="@{String.valueOf(adap.notelistCount(folderModel))}"
+            android:textColor="@color/list_color"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+</layout>

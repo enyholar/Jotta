@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:weightSum="5"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/yellow_theme"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/yellowprimary"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/light_blue_theme"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/lightblueprimary"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/green_theme"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/greencolorPrimary"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/pink_theme"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/pinkprimary"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/gray_theme"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/grayprimary"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/close"
+        android:textAppearance="@style/TextPrimary"
+        android:textStyle="bold"
+
+        android:background="@color/transparent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

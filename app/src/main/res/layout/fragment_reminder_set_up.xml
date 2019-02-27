@@ -1,0 +1,301 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  xmlns:fab="http://schemas.android.com/apk/res-auto"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:paddingRight="16dp"
+  android:paddingLeft="16dp"
+  android:orientation="vertical"
+  android:layout_height="match_parent"
+  tools:context="com.gideondev.jotta.feature.noteInput.view.ReminderSetUpFragment">
+
+  <android.support.v7.widget.AppCompatTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/grayprimary_text"
+    android:textStyle="bold"
+    android:textSize="16sp"
+    android:text="@string/alarm"/>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.getbase.floatingactionbutton.FloatingActionButton
+      android:id="@+id/starred1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      fab:fab_icon="@drawable/ic_notifications_white_24dp"
+      fab:fab_colorNormal="@color/colorAccent"
+      fab:fab_colorPressed="@color/fab_pressed"
+      app:fab_size="normal"
+      android:layout_alignParentLeft="true"
+      android:layout_marginTop="10dp"
+      android:layout_centerHorizontal="true"
+      />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+      android:id="@+id/starred2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/starred1"
+      android:layout_alignStart="@+id/starred1"
+      android:layout_alignTop="@+id/starred1"
+      android:layout_marginBottom="10dp"
+      app:fab_size="normal"
+      fab:fab_colorNormal="@color/colorAccent"
+      fab:fab_colorPressed="@color/fab_pressed"
+      fab:fab_icon="@drawable/ic_notifications_active_white_24dp"/>
+  </RelativeLayout>
+
+ <ScrollView
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+   <LinearLayout
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:layout_height="wrap_content">
+     <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/date"
+       android:background="?android:attr/selectableItemBackground"
+       android:layout_height="72dp">
+
+       <ImageView
+         android:id="@+id/date_icon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+
+         android:layout_marginRight="32dp"
+         android:src="@drawable/ic_view_day_black_24dp"
+         android:layout_centerVertical="true" />
+
+       <LinearLayout
+         android:layout_width="wrap_content"
+         android:orientation="vertical"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@id/date_icon"
+         android:textColor="@color/grayprimary_text"
+         android:layout_height="wrap_content">
+
+         <TextView
+           android:id="@+id/date_text"
+           android:layout_width="wrap_content"
+           android:textSize="15dp"
+           android:textColor="@color/grayprimary_text"
+           android:layout_height="wrap_content"
+           android:text="@string/date" />
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:id="@+id/set_date"
+           android:textSize="15dp"
+           android:textColor="@color/grayprimary_text"
+           android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+     </RelativeLayout>
+
+     <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/time"
+       android:background="?android:attr/selectableItemBackground"
+       android:layout_height="72dp">
+
+       <ImageView
+         android:id="@+id/time_icon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginRight="32dp"
+         android:src="@drawable/ic_access_time_black_24dp"
+         android:layout_centerVertical="true" />
+
+       <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_toEndOf="@+id/time_icon"
+         android:layout_toRightOf="@+id/time_icon"
+         android:orientation="vertical">
+
+         <TextView
+           android:id="@+id/time_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/grayprimary_text"
+           android:text="@string/time"
+           android:textSize="15dp"/>
+
+         <TextView
+           android:id="@+id/set_time"
+           android:layout_width="wrap_content"
+           android:textColor="@color/grayprimary_text"
+           android:layout_height="wrap_content"
+           android:textSize="15dp"/>
+
+       </LinearLayout>
+
+     </RelativeLayout>
+
+     <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/repeat"
+       android:layout_height="72dp">
+
+       <ImageView
+         android:id="@+id/repeat_icon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginRight="32dp"
+         android:src="@drawable/ic_sync_black_24dp"
+         android:layout_centerVertical="true" />
+
+       <LinearLayout
+         android:layout_width="wrap_content"
+         android:orientation="vertical"
+         android:id="@+id/repeat_ll"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@id/repeat_icon"
+         android:layout_height="wrap_content">
+
+         <TextView
+           android:id="@+id/repeat_text"
+           android:textColor="@color/grayprimary_text"
+           android:layout_width="wrap_content"
+           android:textSize="15dp"
+           android:layout_height="wrap_content"
+           android:text="@string/repeat" />
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:id="@+id/set_repeat"
+           android:textSize="15dp"
+           android:textColor="@color/grayprimary_text"
+           android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+       <Switch
+         android:id="@+id/repeat_switch"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="16dp"
+         android:layout_marginLeft="8dp"
+         android:textColor="@color/grayprimary_text"
+         android:checked="true"
+         android:textOn="On"
+         android:textOff="Off"/>
+
+     </RelativeLayout>
+
+     <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/RepeatNo"
+       android:background="?android:attr/selectableItemBackground"
+       android:layout_height="72dp">
+
+       <ImageView
+         android:id="@+id/repeat_no_icon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginRight="32dp"
+         android:src="@drawable/ic_unfold_more_black_24dp"
+         android:layout_centerVertical="true" />
+
+       <LinearLayout
+         android:layout_width="wrap_content"
+         android:orientation="vertical"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@id/repeat_no_icon"
+         android:layout_height="wrap_content">
+
+         <TextView
+           android:id="@+id/repeat_no_text"
+           android:layout_width="wrap_content"
+           android:textSize="15dp"
+           android:textColor="@color/grayprimary_text"
+           android:layout_height="wrap_content"
+           android:text="@string/repeat_no" />
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:id="@+id/set_repeat_no"
+           android:textSize="15dp"
+           android:textColor="@color/grayprimary_text"
+           android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+     </RelativeLayout>
+
+     <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/RepeatType"
+       android:background="?android:attr/selectableItemBackground"
+       android:layout_height="72dp">
+
+       <ImageView
+         android:id="@+id/repeat_type_icon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginRight="32dp"
+         android:src="@drawable/ic_subject_black_24dp"
+         android:layout_centerVertical="true" />
+
+       <LinearLayout
+         android:layout_width="wrap_content"
+         android:orientation="vertical"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@id/repeat_type_icon"
+         android:layout_height="wrap_content">
+
+         <TextView
+           android:id="@+id/repeat_type_text"
+           android:layout_width="wrap_content"
+           android:textSize="15dp"
+           android:textColor="@color/grayprimary_text"
+           android:layout_height="wrap_content"
+           android:text="@string/repeat_type" />
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:id="@+id/set_repeat_type"
+           android:textColor="@color/grayprimary_text"
+           android:textSize="15dp"
+           android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+     </RelativeLayout>
+     <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <android.support.v7.widget.AppCompatButton
+       android:text="@string/save"
+       android:visibility="visible"
+         android:layout_alignParentEnd="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+         android:background="@drawable/common_selector"
+       android:id="@+id/save_alarm"
+         android:layout_alignParentRight="true"/>
+       <android.support.v7.widget.AppCompatButton
+         android:text="@string/cancel"
+         android:visibility="visible"
+         android:background="@drawable/common_selector"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/reminder_cancel"/>
+     </RelativeLayout>
+
+   </LinearLayout>
+ </ScrollView>
+
+</LinearLayout>

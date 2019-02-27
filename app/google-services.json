@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "361921160470",
+    "firebase_url": "https://jotta-46402.firebaseio.com",
+    "project_id": "jotta-46402",
+    "storage_bucket": "jotta-46402.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361921160470:android:78026d7345fc576d",
+        "android_client_info": {
+          "package_name": "com.gideondev.jotta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361921160470-n3h087pb83a9pfpoq40u3ugcuih8c208.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdM-ME60ebure0BsQLV9PjVB1D65qMctg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

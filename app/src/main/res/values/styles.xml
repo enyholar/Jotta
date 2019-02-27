@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="BlueTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/lightblueprimary</item>
+        <item name="colorPrimaryDark">@color/lightblueprimary_dark</item>
+        <item name="colorAccent">@color/lightblueaccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="PinkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/pinkprimary</item>
+        <item name="colorPrimaryDark">@color/pinkprimary_dark</item>
+        <item name="colorAccent">@color/pinkaccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="YellowTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/yellowprimary</item>
+        <item name="colorPrimaryDark">@color/yellowprimary_dark</item>
+        <item name="colorAccent">@color/yellowaccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="GreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/greencolorPrimary</item>
+        <item name="colorPrimaryDark">@color/greencolorPrimaryDark</item>
+        <item name="colorAccent">@color/greencolorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="GrayTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/grayprimary</item>
+        <item name="colorPrimaryDark">@color/grayprimary_dark</item>
+        <item name="colorAccent">@color/grayaccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="TextPrimary" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/yellowprimary_text</item>
+
+    </style>
+
+    <style name="Text" parent="android:TextAppearance.Holo.Medium.Inverse">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColorHint">@color/text_color_lighter</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="TextSecondary" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/yellowsecondary_text</item>
+    </style>
+
+    <style name="Text.Big">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Normal">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Text.Small">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/textcolor</item>
+    </style>
+
+
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/note_move_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/move_to"
+        android:gravity="center_vertical"
+        android:textAllCaps="false"
+        android:background="@drawable/common_selector"
+       />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/note_copy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/copy"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:textAllCaps="false"
+        android:background="@drawable/common_selector"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/note_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:gravity="center_vertical"
+        android:textAllCaps="false"
+        android:background="@drawable/common_selector"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:background="@drawable/common_selector"/>
+
+</LinearLayout>

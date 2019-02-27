@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  xmlns:fab="http://schemas.android.com/apk/res-auto"
+  xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/parent_root"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+
+  tools:context="com.gideondev.jotta.feature.noteInput.view.NoteInputActivity">
+
+  <android.support.design.widget.AppBarLayout
+    android:id="@+id/tool"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/colorPrimary"
+      android:popupTheme="@style/AppTheme.PopupOverlay">
+    </android.support.v7.widget.Toolbar>
+  </android.support.design.widget.AppBarLayout>
+
+  <RelativeLayout
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    >
+
+    <LinearLayout
+      android:id="@+id/note_root"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="@dimen/activity_additional_margin"
+      android:layout_marginRight="@dimen/activity_additional_margin"
+      android:animateLayoutChanges="true"
+      android:focusableInTouchMode="true"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:id="@+id/detail_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/padding_half"
+        android:paddingLeft="@dimen/padding_half"
+        android:paddingRight="@dimen/padding_half"
+        android:animateLayoutChanges="true"
+        android:background="@color/gray_bg"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_note_title"/>
+
+        <android.support.design.widget.CoordinatorLayout
+          android:id="@+id/detail_content_card"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:paddingBottom="2dp"
+          android:background="@drawable/bg_card">
+
+          <ScrollView
+            android:id="@+id/content_wrapper"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="4dp"
+            android:scrollbarThumbVertical="@drawable/scroll_bar">
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+              <include layout="@layout/view_note_attach"/>
+
+              <include layout="@layout/view_note_content"/>
+
+              <LinearLayout
+                android:id="@+id/ln_check_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"/>
+
+            </LinearLayout>
+          </ScrollView>
+        </android.support.design.widget.CoordinatorLayout>
+
+      </LinearLayout>
+      <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+      <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="@dimen/padding_half"
+        android:layout_marginEnd="@dimen/padding_half"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/ln_mak"
+          android:orientation="horizontal"
+
+          tools:ignore="RtlSymmetry">
+          <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/menu_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_selector"
+            android:src="@drawable/ic_add_box_grey_900_36dp"/>
+
+          <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/last_edited"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="@string/app_name"/>
+
+        </LinearLayout>
+      </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+      android:id="@+id/multiple_actions"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:visibility="gone"
+      fab:fab_addButtonColorNormal="@color/colorAccent"
+      fab:fab_addButtonColorPressed="@color/colorPrimaryDark"
+      fab:fab_addButtonPlusIconColor="@color/white"
+      fab:fab_labelStyle="@style/menu_labels_style">
+
+      <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_checkboxes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fab_icon="@drawable/ic_list_black_24dp"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_colorPressed="@color/colorPrimaryDark"
+        fab:fab_size="mini"
+        fab:fab_title="@string/check_box"/>
+
+      <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_add_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_icon="@drawable/ic_access_time_black_24dp"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_colorPressed="@color/colorPrimaryDark"
+        fab:fab_size="mini"
+        fab:fab_title="@string/add_reminder"/>
+
+      <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_share_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_icon="@drawable/ic_share_black_24dp"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_colorPressed="@color/colorPrimaryDark"
+        fab:fab_size="mini"
+        fab:fab_title="@string/share_note"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+  </RelativeLayout>
+
+
+</LinearLayout>

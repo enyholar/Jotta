@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.gideondev.jotta.utils.view.ExpandableHeightGridView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/grid_image"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginTop="10dp"
+  android:drawSelectorOnTop="true"
+  android:numColumns="2"
+  android:stretchMode="columnWidth"
+  android:visibility="visible"
+  >
+</com.gideondev.jotta.utils.view.ExpandableHeightGridView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/head_main"
+        android:layout_height="100dp"
+        android:background="@color/header_clor"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_header"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/circleView"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+          android:id="@+id/email"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Login / Sign up"
+          android:textSize="16sp"
+          android:textColor="@color/white"
+          android:layout_marginLeft="5dp"
+          android:layout_below="@+id/circleView"
+          android:textStyle="normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Akash Bangad"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                tools:ignore="HardcodedText" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"
+                android:text="akash.bangad93@gmail.com"
+                android:textSize="14sp"
+                android:textStyle="normal"
+
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
+
