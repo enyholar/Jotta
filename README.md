@@ -1,6 +1,6 @@
-# README #
+# Jotta #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Jotta android application is an app that use to take note .
 
 ### What is this repository for? ###
 
